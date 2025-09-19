@@ -5,37 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kavya Sri Interior Works</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* WhatsApp floating button */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      text-decoration: none;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-    .whatsapp-btn:hover {
-      background-color: #20b955;
-    }
-  </style>
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+  <!-- Hero Header -->
   <header>
     <h1>Kavya Sri Interior Works</h1>
     <p>Transforming Spaces with Elegance & Style</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -43,25 +25,44 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- About -->
   <section id="about">
     <h2>About Us</h2>
     <p>
-      With years of expertise in interior design and home renovation, we deliver 
-      elegant and functional spaces. Our team specializes in customized interiors 
-      for homes, offices, and commercial spaces.
+      At <strong>Kavya Sri Interior Works</strong>, we bring creativity and functionality together.  
+      With years of expertise in designing homes and commercial spaces,  
+      our goal is to make every corner elegant, stylish, and practical.
     </p>
   </section>
 
+  <!-- Services -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="services">
-      <div class="service"><h3>Modular Kitchens</h3><p>Custom designs for modern kitchens.</p></div>
-      <div class="service"><h3>False Ceilings</h3><p>Beautiful ceiling designs to elevate interiors.</p></div>
-      <div class="service"><h3>Furniture Works</h3><p>Tailor-made furniture to suit your style.</p></div>
-      <div class="service"><h3>Painting & Decor</h3><p>Vibrant colors and creative wall designs.</p></div>
+      <div class="service">
+        <i class="fas fa-kitchen-set"></i>
+        <h3>Modular Kitchens</h3>
+        <p>Smart and customized kitchen solutions for modern homes.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-lightbulb"></i>
+        <h3>False Ceilings</h3>
+        <p>Creative ceiling designs that enhance interiors.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-couch"></i>
+        <h3>Furniture Works</h3>
+        <p>Beautiful furniture crafted to match your lifestyle.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-paint-roller"></i>
+        <h3>Painting & Decor</h3>
+        <p>Vibrant walls and unique decor ideas for any space.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Gallery -->
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
@@ -72,6 +73,7 @@
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <form>
@@ -86,13 +88,15 @@
     </p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Kavya Sri Interior Works. All rights reserved.</p>
   </footer>
 
-  <!-- WhatsApp Button with Pre-filled Message -->
-  <a href="https://wa.me/919849869159?text=Hi%2C%20I%20am%20interested%20in%20home%20makeover%20services.%20Can%20you%20share%20more%20details%3F" 
-     class="whatsapp-btn" target="_blank">💬</a>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919849869159" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script src="js/script.js"></script>
 </body>
