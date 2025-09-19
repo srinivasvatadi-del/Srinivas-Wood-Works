@@ -14,41 +14,27 @@ body {
   color: #333;
 }
 
-/* Hero Header */
+/* Hero Header - solid color */
 header {
-  background: url('images/hero.jpg.jpeg') no-repeat center center/cover;
+  background: #203a43;
   color: white;
   text-align: center;
-  min-height: 280px;
-  padding: 60px 20px;
-  position: relative;
-  animation: fadeIn 1.5s ease-in;
+  padding: 100px 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(20, 30, 40, 0.7);
-  z-index: 0;
-}
-header h1, header p {
-  position: relative;
-  z-index: 1;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.45);
+  min-height: 280px;
+  animation: fadeIn 1.5s ease-in;
 }
 header h1 {
   font-size: 3rem;
   font-weight: 700;
-  animation: slideUp 1s ease-in-out;
+  margin-bottom: 15px;
 }
 header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  animation: slideUp 1.2s ease-in-out;
+  font-size: 1.3rem;
+  max-width: 600px;
 }
 
 /* Navigation */
@@ -146,24 +132,37 @@ section h2::after {
 }
 
 /* Contact */
-.contact form {
+#contact {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+#contact .contact-info {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+#contact .contact-info a {
+  color: #203a43;
+  text-decoration: none;
+  font-weight: 600;
+}
+#contact form {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  max-width: 550px;
-  margin: auto;
 }
-.contact input, .contact textarea {
+#contact input, #contact textarea {
   padding: 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
+  width: 100%;
 }
-.contact textarea {
+#contact textarea {
   resize: none;
 }
-.contact button {
+#contact button {
   padding: 14px;
   background: #203a43;
   color: white;
@@ -173,13 +172,9 @@ section h2::after {
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
 }
-.contact button:hover {
+#contact button:hover {
   background: #2c5364;
   transform: scale(1.05);
-}
-.contact p {
-  margin-top: 25px;
-  font-size: 1rem;
 }
 
 /* WhatsApp Floating Button */
@@ -216,8 +211,21 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
-@keyframes slideUp {
-  from { transform: translateY(50px); opacity
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header {
+    min-height: 180px;
+    padding: 50px 10px;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
