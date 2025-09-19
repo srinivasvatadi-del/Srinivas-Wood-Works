@@ -14,83 +14,105 @@
 </head>
 <body>
   <!-- Hero Header -->
-  <header
-    style="
-      background: url('images/hero.jpg.jpeg') no-repeat center center/cover;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-      min-height: 250px;
-      width: 100vw;
-      box-sizing: border-box;
-    "
-  >
-    <h1>Kavya Sri Interior Works</h1>
-    <p>We Do All Types of Interiors: Cupboards, Ceilings, Modular Kitchens & More</p>
+  <header>
+    <h1 class="fade-slide-in">Kavya Sri Interior Works</h1>
+    <p class="fade-slide-in-delay">We Do All Types of Interiors: Cupboards, Ceilings, Modular Kitchens & More</p>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <a href="#about" class="nav-fade-in">About</a>
+    <a href="#services" class="nav-fade-in delay-1">Services</a>
+    <a href="#gallery" class="nav-fade-in delay-2">Gallery</a>
+    <a href="#contact" class="nav-fade-in delay-3">Contact</a>
   </nav>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      At <strong>Kavya Sri Interior Works</strong>, we bring creativity and
-      functionality together. With years of expertise in designing homes and
-      commercial spaces, our goal is to make every corner elegant, stylish, and
-      practical.
-    </p>
-  </section>
+  <main>
+    <!-- About -->
+    <section id="about" class="fade-up">
+      <h2>About Us</h2>
+      <p>
+        At <strong>Kavya Sri Interior Works</strong>, we bring creativity and
+        functionality together. With years of expertise in designing homes and
+        commercial spaces, our goal is to make every corner elegant, stylish,
+        and practical.
+      </p>
+    </section>
 
-  <!-- Services -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <i class="fas fa-couch"></i>
-        <h3>All Types of Interiors</h3>
-        <p>Complete solutions for stylish interiors that fit your lifestyle.</p>
+    <!-- Services -->
+    <section id="services" class="fade-up delay-1">
+      <h2>Our Services</h2>
+      <div class="services">
+        <article class="service zoom-in">
+          <i class="fas fa-couch"></i>
+          <h3>All Types of Interiors</h3>
+          <p>Complete solutions for stylish interiors that fit your lifestyle.</p>
+        </article>
+        <article class="service zoom-in delay-1">
+          <i class="fas fa-box-archive"></i>
+          <h3>Cupboards & Storage</h3>
+          <p>Custom-designed cupboards and wardrobes for elegance and utility.</p>
+        </article>
+        <article class="service zoom-in delay-2">
+          <i class="fas fa-kitchen-set"></i>
+          <h3>Modular Kitchens</h3>
+          <p>Smart, modern, and space-efficient kitchen designs.</p>
+        </article>
+        <article class="service zoom-in delay-3">
+          <i class="fas fa-lightbulb"></i>
+          <h3>False Ceilings</h3>
+          <p>Stylish ceiling solutions that enhance the beauty of interiors.</p>
+        </article>
+        <article class="service zoom-in delay-4">
+          <i class="fas fa-paint-roller"></i>
+          <h3>Painting & Decoration</h3>
+          <p>Premium wall finishes and creative décor for your space.</p>
+        </article>
       </div>
-      <div class="service">
-        <i class="fas fa-box-archive"></i>
-        <h3>Cupboards & Storage</h3>
-        <p>Custom-designed cupboards and wardrobes for elegance and utility.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-kitchen-set"></i>
-        <h3>Modular Kitchens</h3>
-        <p>Smart, modern, and space-efficient kitchen designs.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-lightbulb"></i>
-        <h3>False Ceilings</h3>
-        <p>Stylish ceiling solutions that enhance the beauty of interiors.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-paint-roller"></i>
-        <h3>Painting & Decoration</h3>
-        <p>Premium wall finishes and creative décor for your space.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/IMG_1289.jpeg" alt="Interior Work 1" />
-      <img src="images/IMG_1290.jpeg" alt="Interior Work 2" />
-      <img src="images/IMG_1291.jpeg" alt="Interior Work 3" />
-      <img src="images/IMG_1292.jpeg" alt="Interior Work 4" />
-    </div>
-  </section>
+    <!-- Gallery -->
+    <section id="gallery" class="fade-up delay-2">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/IMG_1289.jpeg" alt="Interior Work 1" />
+        <img src="images/IMG_1290.jpeg" alt="Interior Work 2" />
+        <img src="images/IMG_1291.jpeg" alt="Interior Work 3" />
+        <img src="images/IMG_1292.jpeg" alt="Interior Work 4" />
+      </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact
+    <!-- Contact -->
+    <section id="contact" class="contact fade-up delay-3">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Your Phone" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="text-align:center; margin-top:20px;">
+        📞 Call us: +91-9849869159 | 📧 Email: varmaphani47@gmail.com
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kavya Sri Interior Works. All rights reserved.</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    href="https://wa.me/919849869159"
+    target="_blank"
+    class="whatsapp-button"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
